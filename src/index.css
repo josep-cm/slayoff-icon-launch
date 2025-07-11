@@ -44,6 +44,9 @@ All colors MUST be HSL.
     --fashion-brown: 25 45% 25%;
     --fashion-light-brown: 30 35% 45%;
     --fashion-accent: 35 30% 85%;
+    --fashion-dark: 20 30% 18%;
+    --fashion-gold: 45 85% 65%;
+    --fashion-purple: 280 60% 45%;
   }
 
   .dark {
@@ -102,5 +105,56 @@ All colors MUST be HSL.
   
   .fashion-accent {
     background-color: hsl(var(--fashion-accent));
+  }
+
+  .fashion-dark {
+    background-color: hsl(var(--fashion-dark));
+  }
+
+  .fashion-gold {
+    color: hsl(var(--fashion-gold));
+  }
+
+  .fashion-purple {
+    color: hsl(var(--fashion-purple));
+  }
+
+  .gradient-hero {
+    background: linear-gradient(135deg, 
+      hsl(var(--fashion-beige)) 0%, 
+      hsl(var(--fashion-accent)) 50%, 
+      hsl(var(--fashion-light-brown) / 0.1) 100%);
+  }
+
+  .gradient-dark {
+    background: linear-gradient(135deg, 
+      hsl(var(--fashion-dark)) 0%, 
+      hsl(var(--fashion-brown)) 100%);
+  }
+
+  .gradient-accent {
+    background: linear-gradient(135deg, 
+      hsl(var(--fashion-accent)) 0%, 
+      hsl(var(--fashion-beige)) 100%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, 
+      hsl(var(--fashion-brown)), 
+      hsl(var(--fashion-gold)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .dynamic-letter {
+    animation: colorShift 3s ease-in-out infinite;
+  }
+
+  @keyframes colorShift {
+    0%, 100% { color: hsl(var(--fashion-brown)); }
+    25% { color: hsl(var(--fashion-gold)); }
+    50% { color: hsl(var(--fashion-purple)); }
+    75% { color: hsl(var(--fashion-light-brown)); }
   }
 }

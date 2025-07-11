@@ -9,72 +9,72 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 345 25% 96%;
-    --foreground: 0 0% 7%;
+    --background: 35 20% 94%;
+    --foreground: 0 0% 20%;
 
-    --card: 345 25% 98%;
-    --card-foreground: 0 0% 7%;
+    --card: 35 20% 96%;
+    --card-foreground: 0 0% 20%;
 
-    --popover: 345 25% 98%;
-    --popover-foreground: 0 0% 7%;
+    --popover: 35 20% 96%;
+    --popover-foreground: 0 0% 20%;
 
-    --primary: 0 0% 7%;
-    --primary-foreground: 345 25% 96%;
+    --primary: 0 0% 20%;
+    --primary-foreground: 35 20% 94%;
 
-    --secondary: 345 30% 85%;
-    --secondary-foreground: 0 0% 7%;
+    --secondary: 35 25% 80%;
+    --secondary-foreground: 0 0% 20%;
 
-    --muted: 345 30% 85%;
+    --muted: 35 25% 80%;
     --muted-foreground: 0 10% 35%;
 
-    --accent: 345 25% 80%;
-    --accent-foreground: 0 0% 7%;
+    --accent: 35 20% 75%;
+    --accent-foreground: 0 0% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 345 25% 82%;
-    --input: 345 25% 82%;
-    --ring: 0 0% 7%;
+    --border: 35 20% 78%;
+    --input: 35 20% 78%;
+    --ring: 0 0% 20%;
 
     --radius: 0.5rem;
 
     /* Fashion-forward custom colors */
-    --fashion-jet-black: 0 0% 7%;
-    --fashion-blush-pink: 345 46% 90%;
+    --fashion-charcoal: 0 0% 20%;
+    --fashion-warm-beige: 35 30% 88%;
     --fashion-electric-lavender: 280 60% 68%;
-    --fashion-accent: 345 30% 85%;
-    --fashion-background: 345 25% 96%;
+    --fashion-accent: 35 25% 80%;
+    --fashion-background: 35 20% 94%;
   }
 
   .dark {
-    --background: 0 0% 7%;
-    --foreground: 345 25% 94%;
+    --background: 0 0% 20%;
+    --foreground: 35 20% 92%;
 
-    --card: 0 0% 10%;
-    --card-foreground: 345 25% 94%;
+    --card: 0 0% 15%;
+    --card-foreground: 35 20% 92%;
 
-    --popover: 0 0% 10%;
-    --popover-foreground: 345 25% 94%;
+    --popover: 0 0% 15%;
+    --popover-foreground: 35 20% 92%;
 
-    --primary: 345 25% 94%;
-    --primary-foreground: 0 0% 7%;
+    --primary: 35 20% 92%;
+    --primary-foreground: 0 0% 20%;
 
-    --secondary: 0 15% 18%;
-    --secondary-foreground: 345 25% 94%;
+    --secondary: 0 15% 25%;
+    --secondary-foreground: 35 20% 92%;
 
-    --muted: 0 15% 18%;
-    --muted-foreground: 345 20% 65%;
+    --muted: 0 15% 25%;
+    --muted-foreground: 35 15% 60%;
 
-    --accent: 0 15% 18%;
-    --accent-foreground: 345 25% 94%;
+    --accent: 0 15% 25%;
+    --accent-foreground: 35 20% 92%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 15% 18%;
-    --input: 0 15% 18%;
-    --ring: 345 25% 70%;
+    --border: 0 15% 25%;
+    --input: 0 15% 25%;
+    --ring: 35 20% 70%;
   }
 }
 
@@ -89,12 +89,12 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  .fashion-jet-black {
-    background-color: hsl(var(--fashion-jet-black));
+  .fashion-charcoal {
+    background-color: hsl(var(--fashion-charcoal));
   }
   
-  .fashion-blush-pink {
-    background-color: hsl(var(--fashion-blush-pink));
+  .fashion-warm-beige {
+    background-color: hsl(var(--fashion-warm-beige));
   }
   
   .fashion-electric-lavender {
@@ -109,8 +109,8 @@ All colors MUST be HSL.
     background-color: hsl(var(--fashion-background));
   }
 
-  .text-jet-black {
-    color: hsl(var(--fashion-jet-black));
+  .text-charcoal {
+    color: hsl(var(--fashion-charcoal));
   }
 
   .text-electric-lavender {
@@ -120,31 +120,31 @@ All colors MUST be HSL.
   .gradient-hero {
     background: linear-gradient(135deg, 
       hsl(var(--fashion-background)) 0%, 
-      hsl(var(--fashion-blush-pink)) 50%, 
+      hsl(var(--fashion-warm-beige)) 50%, 
       hsl(var(--fashion-accent)) 100%);
   }
 
   .gradient-dark {
     background: linear-gradient(135deg, 
-      hsl(var(--fashion-jet-black)) 0%, 
-      hsl(0 0% 15%) 100%);
+      hsl(var(--fashion-charcoal)) 0%, 
+      hsl(0 0% 25%) 100%);
   }
 
   .gradient-accent {
     background: linear-gradient(135deg, 
-      hsl(var(--fashion-blush-pink)) 0%, 
+      hsl(var(--fashion-warm-beige)) 0%, 
       hsl(var(--fashion-background)) 100%);
   }
 
   .gradient-lavender {
     background: linear-gradient(135deg, 
       hsl(var(--fashion-electric-lavender)) 0%, 
-      hsl(var(--fashion-blush-pink)) 100%);
+      hsl(var(--fashion-warm-beige)) 100%);
   }
 
   .text-gradient {
     background: linear-gradient(135deg, 
-      hsl(var(--fashion-jet-black)), 
+      hsl(var(--fashion-charcoal)), 
       hsl(var(--fashion-electric-lavender)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
